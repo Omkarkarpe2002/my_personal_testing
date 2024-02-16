@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Omkar Karpe</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  {% load static %}
+  <link href="{% static "img/favicon.png" %}" rel="icon">
+  <link href="{% static "img/apple-touch-icon.png" % }" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/glightbox/css/glightbox.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/swiper/swiper-bundle.min.css' %}">
+  <!-- Template Main CSS File -->
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>{% block title %}   {% endblock title %}</title>
+  </head>
+  <body style="background-color:rgb(0 30 82);">
+
+
+  <!-- ======= Header ======= -->
+<h1 style="text-align:center;margin-top: 40px;color: #f9bf3f;">"जे जे वाचल्यावर आपल्याला वाचता येत असल्याबद्दल धन्यता वाटते ते चांगल
+    साहित्य!"</h1>
+  <!-- End Header -->
+
+      {% block body %}  {% endblock body %}
+      <div class="container my-3" >  
+        <!-- <h2>Articles by Omkar</h2> -->
+         <div class="forall" style="display:flex; flex-wrap: wrap; margin-top:2vh">
+         {% for post in allPosts  %}    
+          <div class="card" style="width: 21rem;margin: 16px;;">
+             <!-- <img class="img-fluid card-img-top" src="iCoder/media/myimg/testimonial-2.jpg" alt="..."/></a> -->
+             <img src="{{post.image.url}}" alt="" style="height:17rem;">
+             
+             <!-- <img src="{{post.image}}" alt=""> -->
+             <!-- <img class="card-img-top" src="iCoder/static/img/apple-touch-icon.png"alt="Card image cap"> -->
+             <div class="card-body">
+               <a href="/blog/{{post.slug}}"><h5 class="card-title" style="text-align:center;font-weight:bolder;margin-top: 0;">{{post.title}}</h5></a>
+               
+               <p class="card-text">{{post.content| truncatechars:150}}</p>
+               <a href="/blog/{{post.slug}}" class="btn btn-primary">Continue reading</a>
+               
+             </div>
+         </div> 
+ 
+     {% endfor %}  
+    </div>          
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

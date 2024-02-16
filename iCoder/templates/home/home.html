@@ -1,0 +1,415 @@
+{% extends 'base.html' %}
+
+{% block title %} Home{% endblock title %}
+{% block contactactive %} active {% endblock contactactive %}
+{% block body %}
+
+<!-- ======= Hero Section ======= -->
+{% load static %}
+  <div id="hero" class="home" style="background-color:antiquewhite">
+
+    <div class="container">
+      <div class="hero-content">
+        <h1>I'm <span class="typed" data-typed-items="Karpe Omkar, Developer, Programmer, Bibliophile, Learner"></span></h1>
+        <p>Developer, Programmer, Bibliophile, Learner</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="https://www.snapchat.com/add/om_0520?share_id=pE4Mko-FE_4&locale=en-IN"><i class="bi bi-snapchat"></i></a></li>
+          <li><a href="https://github.com/Omkarkarpe2002"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/omkar-karpe-883a0b20b"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/_omkarpe_/?next=%2F"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="static/img/me_li.jpg" class="img-responsive" alt="me">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr">
+
+              <p class="p-heading">Hi I'm Karpe Omkar,</p>
+              <p class="separator">Currently I am a second year undergraduate student, pursuing my B.tech in Computer Science and
+                Engineering, from <strong>Vishwakarma
+                  Institute of Technology(VIT)</strong> in Pune. I was born in Dhondrai
+                , a village in Beed District
+                of Maharashtra. I did my schooling at Shiv Sharda Public School, Georai.
+              <br>
+              I like to watch movies, I also love to play cricket.
+              My hobbies inlcude reading books, listening music and much more.
+              I have been fond of
+              marathi literature from young age. Particularly I like to read historical fiction, autobiographies
+              and mythological books.
+              I believe that books help us to expand our horizon and to think out of the box. Reading
+              introduces us to new and different things to experience and enjoy.
+              I also love to travel. Travelling helps you to grow as a human and understand yourself and it gives
+              you a new perspective towards everything.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    {% comment %} <div id="services">
+      <div class="container">
+
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-briefcase"></i>
+                <span>UI/UX DESIGN</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-card-checklist"></i>
+                <span>BRAND IDENTITY</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-bar-chart"></i>
+                <span>WEB DESIGN</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-binoculars"></i>
+                <span>MOBILE APPS</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-brightness-high"></i>
+                <span>Analytics</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-calendar4-week"></i>
+                <span>PHOTOGRAPHY</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </div><!-- End Services Section --> {% endcomment %}
+
+    <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>My Projects</h2>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <!-- <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul> -->
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="static/img/portfolio/password.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Password Manager and <br> Generator</h4>
+              <p>Python</p>
+              <!-- href={ % static "static/img/passwordmanager.png" % }  -->
+              <a href="static/img/passwordmanager.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="https://github.com/Omkarkarpe2002/Password-Manager-and-Generator" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="static/img/portfolio/airquality.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Air Quality Monitoring <br>
+                 over internet</h4>
+              <p>IOT</p>
+              <a href="static/img/portfolio/airquality.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="https://github.com/Omkarkarpe2002/Air_Quality_Monitoring_Over_Internet" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="static/img/portfolio/heartrate1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Pulse Oximeter and Heart <br> Rate Monitoring System</h4>
+              <p>IOT</p>
+              <a href="static/img/portfolio/heartrate1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="https://github.com/Omkarkarpe2002/Heart_rate_monitoring_system" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="static/img/portfolio/houseprice (2).png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>House Price Prediction System</h4>
+              <p>Machine Learning</p>
+              <a href="static/img/portfolio/houseprice (2).png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="https://github.com/Omkarkarpe2002/House_Price_Prediction" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="static/img/portfolio/iplanalysis.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>IPL data Analysis</h4>
+              <p>Python | Data Science</p>
+              <a href="static/img/portfolio/iplanalysis.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="https://github.com/Omkarkarpe2002/IPL_Data_Analysis" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="static/img/portfolio/loan.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Loan Prediction</h4>
+              <p>Machine Learning</p>
+              <a href="static/img/portfolio/loan.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="https://github.com/Omkarkarpe2002/Loan_Prediction" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- End Portfolio Section -->
+
+    <!-- ======= Journal Section ======= -->
+    <div id="journal" class="text-left paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Blog</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="journal-block">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="/blog/mritunjay"><img src="static/img/mritunjay.png" class="img-responsive" alt="img"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="/blog/mritunjay">मृत्युंजय</a></h4>
+                  <p class="separator">सर्वसामान्यांना महाभारतातील खलनायक म्हणून
+                    परिचित असलेल्या महावीर कर्णाच्या असामान्य व्यक्तिमत्वाच्या मागोवा घेणारी ही कादंबरी आहे........
+                    <a href="/blog/mritunjay">Continue Reading</a>
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="/blog/yayati_review"><img src="static/img/yayati.png" class="img-responsive" alt="img"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="/blog/yayati_review">ययाती</a></h4>
+                  <p class="separator">कुरू वंशातील राजा ययाती आणि त्याच्या जीवनचारितावर आधारित ही साहित्य अकादमी पुरस्कार प्राप्त कादंबरी 
+                    मानवी जीवनाच्या अनेक पैलुंना अलगद स्पर्श करते.....
+                    <a href="/blog/yayati_review">Continue Reading</a>
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="/blog/the_alchemist"><img src="static/img/alchemist.png" class="img-responsive" alt="img"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="/blog/the_alchemist">द अलकेमिस्ट</a></h4>
+                  <p class="separator">अलकेमिस्ट या शब्दाचा मराठी अर्थ होतो किमयागार.या पुस्तकात लेखकाने एका गावात राहणारा मेंढपाळ
+                    व त्याचा खजिना पर्यंतच्या प्रवासाची रंजक कथा मांडली आहे.....
+                    <a href="/blog/the_alchemist">Continue Reading</a>
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        <a href="/blog" style="text-align:right;font-weight:bolder;font-size:larger;">More...</a>
+
+        </div>
+      </div>
+
+    </div><!-- End Journal Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
+
+            <div class="col-lg-6">
+              <div class="contact-contact">
+
+                <h2 class="mb-30">GET IN TOUCH</h2>
+
+                <ul class="contact-details">
+                  <li><span>At Post Dhondrai, Taluka Georai, Dist Beed</span></li>
+                  <li><span>Maharashtra , India</span></li>
+                  <li><span>9767925888</span></li>
+                  <li><span>omkarbkarpe02@gmail.com</span></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <form action="/contact" method="post">
+                {% csrf_token %}
+                <div class="row gy-3">
+
+                  <div class="col-lg-6">
+                    <div class="form-group contact-block1">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input type="number" class="form-control" name="phone" id="phone" placeholder="phone" required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="content" placeholder="content" required></textarea>
+                    </div>
+                  </div>
+<!-- 
+                  <div class="col-lg-12">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div> -->
+
+                  <div class="mt-0" style="text-align:center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.snapchat.com/add/om_0520?share_id=pE4Mko-FE_4&locale=en-IN"><i class="bi bi-snapchat"></i></a></li>
+          <li><a href="https://github.com/Omkarkarpe2002"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/omkar-karpe-883a0b20b"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/_omkarpe_/?next=%2F"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+
+      </div>
+
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+      -->
+        Made with Love By Omkar
+      </div>
+
+    </div>
+  </div><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/typed.js/typed.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
+
+{% endblock %}
